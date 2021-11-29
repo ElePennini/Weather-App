@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ele's Weather App</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5ee829ee44.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Permanent+Marker&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="city">Athens</h1>
+      <h2 id="date">Mo, 2 Nov 2021</h2>
+      <h2 id="time">18:45</h2>
+
+      <div class="row main-info">
+        <div class="col-sm">
+          <i class="fas fa-cloud-rain main-icon"></i>
+          <h4 id="description">Rainy</h4>
+          <h3><span id="maxtemp">10</span>° | <span id="mintemp">7</span>°</h3>
+          <br />
+        </div>
+
+        <div class="col-sm">
+          <p class="degrees"><span id="maintemp">10</span>°C | F</p>
+          <p class="details">
+            Humidity: <span class="data"><span id="humid">58</span>%</span>
+          </p>
+          <p class="details">
+            Wind: <span class="data"><span id="wind">12-28</span> km/h</span>
+          </p>
+          <p class="details">
+            Feels like:<span class="data">
+              <span id="feelslike">9</span>°
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="row days">
+        <div class="col">
+          Tuesday <br />
+          <i class="fas fa-wind wind"></i>
+          <p>7° | 4°</p>
+        </div>
+        <div class="col">
+          Wednesday <br />
+          <i class="fas fa-cloud-rain cloud-rain"></i>
+          <p>7° | 5°</p>
+        </div>
+        <div class="col">
+          Thursday <br />
+          <i class="fas fa-cloud-sun-rain cloud-sun-rain"></i>
+          <p>8° | 4°</p>
+        </div>
+        <div class="col">
+          Friday <br />
+          <i class="fas fa-cloud-sun cloud-sun"></i>
+          <p>8° | 6°</p>
+        </div>
+        <div class="col">
+          Saturday <br />
+          <i class="fas fa-sun sun"></i>
+          <p>11° | 6°</p>
+        </div>
+      </div>
+      <form id="search-form">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <input
+              type="search"
+              placeholder="Go somewhere else..."
+              class="form-control"
+              autofocus="on"
+              id="city-input"
+            />
+          </div>
+          <div class="col-auto">
+            <button>
+              <i class="fas fa-plane-departure pin"></i>
+            </button>
+            <!-- <button id="currentloc">
+              <i class="fas fa-map-marker-alt pin"></i>
+            </button> /-->
+            <button id="currentLoc">
+              <i class="fas fa-map-marker-alt pin"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

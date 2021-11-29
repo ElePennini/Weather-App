@@ -1,0 +1,123 @@
+body {
+  color: #00204a;
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: Gluten, cursive;
+  font-weight: 900;
+}
+h3 {
+  font-size: 20px;
+  font-family: Gluten, cursive;
+  font-weight: 900;
+}
+h4 {
+  padding-top: 10px;
+  font-family: Sniglet, cursive;
+  font-weight: 900;
+}
+
+p {
+  font-size: 15px;
+  font-family: Gluten, cursive;
+  font-weight: 700;
+}
+form {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-family: Sniglet, cursive;
+}
+
+button {
+  background-color: #79c2d0;
+  border-radius: 5px;
+  padding: 3px;
+  box-shadow: seashell;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+.container {
+  max-width: 600px;
+  border-radius: 20px;
+  border: 1px solid #5f6caf;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #edf7fa;
+}
+.main-info {
+  text-align: center;
+  padding-top: 30px;
+}
+.main-icon {
+  font-size: 100px;
+  color: #566683;
+}
+.degrees {
+  font-size: 35px;
+  font-weight: 900px;
+  font-family: Gluten, cursive;
+  font-weight: 900;
+}
+
+.details {
+  font-family: Sniglet, cursive;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.data {
+  font-weight: 700;
+}
+
+.days {
+  margin-top: 10px;
+  font-family: Sniglet, cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+.wind,
+.cloud-rain,
+.cloud-sun-rain,
+.cloud-sun,
+.sun {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.wind {
+  color: #8ed6ff;
+}
+
+.cloud-rain {
+  color: #566683;
+}
+
+.cloud-sun-rain {
+  color: #afc5ff;
+}
+
+.cloud-sun {
+  color: #f3cba5;
+}
+
+.sun {
+  color: #ffc93c;
+}
+.pin {
+  font-size: 25px;
+  color: #00204a;
+}
+
+#currentloc {
+  margin-right: 15px;
+  padding: 3px;
+}
