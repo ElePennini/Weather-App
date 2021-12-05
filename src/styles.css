@@ -21,6 +21,7 @@ h4 {
   padding-top: 10px;
   font-family: Sniglet, cursive;
   font-weight: 900;
+  text-transform: capitalize;
 }
 
 p {
