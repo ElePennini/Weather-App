@@ -21,9 +21,11 @@ h4 {
   padding-top: 10px;
   font-family: Sniglet, cursive;
   font-weight: 900;
-  text-transform: capitalize;
 }
 
+h4::first-letter {
+  text-transform: capitalize;
+}
 p {
   font-size: 15px;
   font-family: Gluten, cursive;
@@ -45,13 +47,25 @@ button {
 button:hover {
   transform: scale(1.2);
 }
+
+.all-wrapper {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
 .container {
   max-width: 600px;
   border-radius: 20px;
   border: 1px solid #5f6caf;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   background-color: #edf7fa;
+}
+
+.appwrapper {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
 }
 .main-info {
   text-align: center;
