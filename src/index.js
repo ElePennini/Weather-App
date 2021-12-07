@@ -47,11 +47,12 @@ displaytime.innerHTML = `${hours}:${minutes}`;
 
 function displayWeather(response) {
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = `http://openweathermap.org/img/wn/10d@2x.png`;
+
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#maintemp").innerHTML = Math.round(
