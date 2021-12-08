@@ -1,5 +1,5 @@
 body {
-  color: #00204a;
+  color: black;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 h1,
 h2 {
   text-align: center;
-  font-family: Gluten, cursive;
+  font-family: Gluten;
   font-weight: 900;
 }
 h3 {
@@ -18,7 +18,7 @@ h3 {
   font-weight: 900;
 }
 h4 {
-  padding-top: 10px;
+  padding-top: 20px;
   font-family: Sniglet, cursive;
   font-weight: 900;
 }
@@ -38,10 +38,11 @@ form {
 }
 
 button {
-  background-color: #79c2d0;
+  background-color: #c1c0b9;
   border-radius: 5px;
   padding: 3px;
   box-shadow: seashell;
+  margin-left: 0px;
 }
 
 button:hover {
@@ -59,28 +60,32 @@ button:hover {
   border: 1px solid #5f6caf;
   margin-top: 40px;
   margin-bottom: 10px;
-  background-color: #edf7fa;
+  background-color: #f1f1f1;
 }
 
-.appwrapper {
-  max-width: 600px;
-  text-align: center;
-  margin: 0 auto;
-}
 .main-info {
   text-align: center;
   padding-top: 30px;
 }
+
+#currentLoc {
+  float: right;
+
+  position: relative;
+  bottom: 52px;
+  right: 150px;
+}
+
 #icon {
-  width: 50px;
-  height: 50px;
-  color: #566683;
+  width: 60px;
+  height: 60px;
 }
 .degrees {
   font-size: 35px;
   font-weight: 900px;
   font-family: Gluten, cursive;
   font-weight: 900;
+  margin-bottom: 5px;
 }
 
 .details {
@@ -94,7 +99,7 @@ button:hover {
 }
 
 .days {
-  margin-top: 10px;
+  margin-top: 30px;
   font-family: Sniglet, cursive;
   font-size: 18px;
   text-align: center;
@@ -131,9 +136,4 @@ button:hover {
 .pin {
   font-size: 25px;
   color: #00204a;
-}
-
-#currentloc {
-  margin-right: 15px;
-  padding: 3px;
 }
