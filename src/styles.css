@@ -72,7 +72,8 @@ button:hover {
   padding-top: 30px;
 }
 #icon {
-  font-size: 100px;
+  width: 50px;
+  height: 50px;
   color: #566683;
 }
 .degrees {
