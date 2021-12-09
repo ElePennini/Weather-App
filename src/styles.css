@@ -1,5 +1,5 @@
 body {
-  color: black;
+  color: #323643;
 }
 
 h1 {
@@ -38,10 +38,10 @@ form {
 }
 
 button {
-  background-color: #c1c0b9;
+  background-color: #f9f9f9;
   border-radius: 5px;
   padding: 3px;
-  box-shadow: seashell;
+  box-shadow: #ebcbae;
   margin-left: 0px;
 }
 
@@ -57,10 +57,10 @@ button:hover {
 .container {
   max-width: 600px;
   border-radius: 20px;
-  border: 1px solid #5f6caf;
+  border: 1px solid #2e383f;
   margin-top: 40px;
   margin-bottom: 10px;
-  background-color: #f1f1f1;
+  background-color: #a6e4e7;
 }
 
 .main-info {
