@@ -9,17 +9,17 @@ h1 {
 h1,
 h2 {
   text-align: center;
-  font-family: Gluten;
+  font-family: "Varela Round", sans-serif;
   font-weight: 900;
 }
 h3 {
   font-size: 20px;
-  font-family: Gluten, cursive;
+  font-family: "Varela Round", sans-serif;
   font-weight: 900;
 }
 h4 {
   padding-top: 20px;
-  font-family: Sniglet, cursive;
+  font-family: "Varela Round", sans-serif;
   font-weight: 900;
 }
 
@@ -28,13 +28,13 @@ h4::first-letter {
 }
 p {
   font-size: 15px;
-  font-family: Gluten, cursive;
+  font-family: "Varela Round", sans-serif;
   font-weight: 700;
 }
 form {
   margin-top: 40px;
   margin-bottom: 60px;
-  font-family: Sniglet, cursive;
+  font-family: "Varela Round", sans-serif;
 }
 
 button {
