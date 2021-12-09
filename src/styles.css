@@ -69,11 +69,9 @@ button:hover {
 }
 
 #currentLoc {
-  float: right;
-
   position: relative;
-  bottom: 52px;
-  right: 150px;
+  top: 100px;
+  left: 150px;
 }
 
 #icon {
