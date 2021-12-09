@@ -28,11 +28,11 @@
   <body>
     <div class="all-wrapper">
     <div class="container">
-    <div class= "d-flex">
-      <button  id="currentLoc">
+ 
+     
+        <h1> <button  class="btn btn-outline-light" id="currentLoc">
                 <i class="fas fa-map-marker-alt pin"></i>
-                </button> </div>
-        <h1 id="city">Athens</h1>
+                </button> <span id="city">Athens</span> </h1>
          
         <h2 id="date">Mo, 2 Nov 2021</h2>
         <h2 id="time">18:45</h2>
@@ -67,27 +67,27 @@
           <div class="col">
             Tuesday <br />
             <i class="fas fa-wind wind"></i>
-            <p>7° | 4°</p>
+            <p>7° | <span class = min-degrees> 4°</span></p>
           </div>
           <div class="col">
             Wednesday <br />
             <i class="fas fa-cloud-rain cloud-rain"></i>
-            <p>7° | 5°</p>
+            <p>7° | <span class = min-degrees>5°</span></p>
           </div>
           <div class="col">
             Thursday <br />
             <i class="fas fa-cloud-sun-rain cloud-sun-rain"></i>
-            <p>8° | 4°</p>
+            <p>8° | <span class = min-degrees>4°</span></p>
           </div>
           <div class="col">
             Friday <br />
             <i class="fas fa-cloud-sun cloud-sun"></i>
-            <p>8° | 6°</p>
+            <p>8° | <span class = min-degrees>6°</span></p>
           </div>
           <div class="col">
             Saturday <br />
             <i class="fas fa-sun sun"></i>
-            <p>11° | 6°</p>
+            <p>11° | <span class = min-degrees>6°</span></p>
           </div>
         </div>
         <form id="search-form">
@@ -102,7 +102,7 @@
               />
             </div>
             <div class="col-auto">
-              <button >
+              <button class="btn btn-outline-light">
                 <i class="fas fa-plane-departure pin"></i>
               </button>
           
