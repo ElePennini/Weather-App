@@ -11,15 +11,17 @@
       crossorigin="anonymous"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
 
     <script
       src="https://kit.fontawesome.com/5ee829ee44.js"
       crossorigin="anonymous"
     ></script>
-   
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
@@ -27,28 +29,27 @@
 
   <body>
     <div class="all-wrapper">
-    <div class="container">
- 
-     
-        <h1> <button  class="btn btn-outline-light" id="currentLoc">
-                <i class="fas fa-map-marker-alt pin"></i>
-                </button> <span id="city">Athens</span> </h1>
-         
-        <h2 id="date">Mo, 2 Nov 2021</h2>
-        <h2 id="time">18:45</h2>
+      <div class="container">
+        <h1>
+          <button class="btn btn-outline-light" id="currentLoc">
+            <i class="fas fa-map-marker-alt pin"></i>
+          </button>
+          <span id="city"></span>
+        </h1>
+
+        <h2 id="date"></h2>
+        <h2 id="time"></h2>
 
         <div class="row main-info">
           <div class="col-sm">
-           <img src="" alt="" id="icon"/>
-            <h4 id="description">Rainy</h4>
-            <h3>
-              <span id="maxtemp">10</span>° | <span id="mintemp">7</span>°
-            </h3>
+            <img src="" alt="" id="icon" />
+            <h4 id="description"></h4>
+            <h3><span id="maxtemp"></span>° | <span id="mintemp"></span>°</h3>
             <br />
           </div>
 
           <div class="col-sm">
-            <p class="degrees"><span id="maintemp">10</span>°C</p>
+            <p class="degrees"><span id="maintemp"></span>°C</p>
             <p class="details">
               Humidity: <span class="data"><span id="humid">58</span>%</span>
             </p>
@@ -63,65 +64,66 @@
           </div>
         </div>
 
-        <div class="row days">
+        <div class="row days" id="forecast">
           <div class="col">
             Tuesday <br />
-            <i class="fas fa-wind wind"></i>
-            <p>7° | <span class = min-degrees> 4°</span></p>
+            <img src="" alt="" id="icon" />
+            <!-- <i class="fas fa-wind wind"></i> -->
+            <p>7° | <span class="min-degrees"> 4°</span></p>
           </div>
-          <div class="col">
+          <!-- <div class="col">
             Wednesday <br />
             <i class="fas fa-cloud-rain cloud-rain"></i>
-            <p>7° | <span class = min-degrees>5°</span></p>
+            <p>7° | <span class = "min-degrees">5°</span></p>
           </div>
           <div class="col">
             Thursday <br />
             <i class="fas fa-cloud-sun-rain cloud-sun-rain"></i>
-            <p>8° | <span class = min-degrees>4°</span></p>
+            <p>8° | <span class = "min-degrees">4°</span></p>
           </div>
           <div class="col">
             Friday <br />
             <i class="fas fa-cloud-sun cloud-sun"></i>
-            <p>8° | <span class = min-degrees>6°</span></p>
+            <p>8° | <span class = "min-degrees">6°</span></p>
           </div>
           <div class="col">
             Saturday <br />
             <i class="fas fa-sun sun"></i>
-            <p>11° | <span class = min-degrees>6°</span></p>
-          </div>
-        </div>
-        <form id="search-form">
-          <div class="row justify-content-center">
-            <div class="col-auto">
-              <input
-                type="search"
-                placeholder="Go somewhere else..."
-                class="form-control"
-                autofocus="on"
-                id="city-input"
-              />
-            </div>
-            <div class="col-auto">
-              <button class="btn btn-outline-light">
-                <i class="fas fa-plane-departure pin"></i>
-              </button>
-          
-              <!--<button  id="currentLoc">
+            <p>11° | <span class = "min-degrees">6°</span></p>
+          </div> -->
+        </div> 
+          <form id="search-form">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <input
+                  type="search"
+                  placeholder="Go somewhere else..."
+                  class="form-control"
+                  autofocus="on"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-light">
+                  <i class="fas fa-plane-departure pin"></i>
+                </button>
+
+                <!--<button  id="currentLoc">
                 <i class="fas fa-map-marker-alt pin"></i>
               </button> -->
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-      <small>
-        <a href="https://github.com/ElePennini/Weather-App" target="_blank">
-          Open-sourced</a
-        >
-        by Eleonora Pennini
-      </small>
+          </form>
+        </div>
+        <small>
+          <a href="https://github.com/ElePennini/Weather-App" target="_blank">
+            Open-sourced</a
+          >
+          by Eleonora Pennini
+        </small>
       </div>
     </div>
-    
+
     <script src="src/index.js"></script>
   </body>
 </html>

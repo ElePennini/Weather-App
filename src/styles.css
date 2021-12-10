@@ -1,5 +1,5 @@
 body {
-  color: #323643;
+  color: black;
 }
 
 h1 {
@@ -64,11 +64,11 @@ button:hover {
 
 .main-info {
   text-align: center;
-  padding-top: 30px;
 }
 
 #currentLoc {
-  margin-right: 10px;
+  margin-right: 15px;
+  padding-top: 5px;
 }
 
 #icon {

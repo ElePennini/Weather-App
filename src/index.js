@@ -45,6 +45,32 @@ displaydate.innerHTML = `${day}, ${month} ${date} ${year}`;
 let displaytime = document.querySelector("#time");
 displaytime.innerHTML = `${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `<div class="days" id="forecast">
+         <div class="col"> 
+            Tuesday <br />  <img src="" alt="" id="icon"/>
+            <p>7° | <span class = "min-degrees"> 4°</span></p>
+          </div> 
+          </div>
+          `;
+  forecastHTML =
+    forecastHTML +
+    `<div class="days" id="forecast">
+            <div class="col" > 
+            Monday <br />  <img src="" alt="" id="icon"/>
+            <p>7° | <span class = "min-degrees"> 4°</span></p>
+          </div>
+         </div> `;
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeather(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
@@ -104,3 +130,4 @@ let currentLocation = document.querySelector("#currentLoc");
 currentLocation.addEventListener("click", showCurrentLocation);
 
 searchCity("Athens");
+displayForecast();
