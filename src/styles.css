@@ -12,6 +12,7 @@ h2 {
   text-align: center;
   font-family: "Varela Round", sans-serif;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 h3 {
   font-size: 20px;
@@ -60,12 +61,13 @@ button:hover {
   border: 1px solid #2e383f;
   margin-top: 40px;
   margin-bottom: 20px;
-  background-color: #a6e4e7;
+
+  background-image: url(src/images/background.png);
 }
 
 .main-info {
   text-align: center;
-  margin: 40px;
+  margin: 30px;
 }
 
 #currentLoc {
@@ -76,6 +78,13 @@ button:hover {
   width: 60px;
   height: 60px;
 }
+
+#forecast-icon {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
 .degrees {
   font-size: 35px;
   font-weight: 900px;
@@ -98,41 +107,12 @@ button:hover {
 }
 
 .days {
-  margin-top: 30px;
   font-family: "Varela Round", sans-serif;
   font-size: 18px;
   text-align: center;
 }
 
-.wind,
-.cloud-rain,
-.cloud-sun-rain,
-.cloud-sun,
-.sun {
-  font-size: 30px;
-  padding-top: 10px;
-}
-
-.wind {
-  color: #8ed6ff;
-}
-
-.cloud-rain {
-  color: #566683;
-}
-
-.cloud-sun-rain {
-  color: #afc5ff;
-}
-
-.cloud-sun {
-  color: #f3cba5;
-}
-
-.sun {
-  color: #ffc93c;
-}
 .pin {
   font-size: 25px;
-  color: #00204a;
+  color: black;
 }
