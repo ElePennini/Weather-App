@@ -25,25 +25,25 @@ let days = [
 let day = days[now.getDay()];
 
 let months = [
-  "Jan",
-  "Feb",
+  "January",
+  "February",
   "March",
-  "Apr",
+  "April",
   "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 let month = months[now.getMonth()];
 
-displaydate.innerHTML = `${day}, ${month} ${date} ${year}`;
+displaydate.innerHTML = `${day}, ${date} ${month} ${year}`;
 
 let displaytime = document.querySelector("#time");
-displaytime.innerHTML = `${hours}:${minutes}`;
+displaytime.innerHTML = `Last updated: ${hours}:${minutes}`;
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -146,4 +146,4 @@ function showCurrentLocation(event) {
 let currentLocation = document.querySelector("#currentLoc");
 currentLocation.addEventListener("click", showCurrentLocation);
 
-searchCity("Athens");
+searchCity("London");
