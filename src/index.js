@@ -45,30 +45,30 @@ displaydate.innerHTML = `${day}, ${month} ${date} ${year}`;
 let displaytime = document.querySelector("#time");
 displaytime.innerHTML = `${hours}:${minutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `<div class="days" id="forecast">
-         <div class="col"> 
-            Tuesday <br />  <img src="" alt="" id="icon"/>
-            <p>7° | <span class = "min-degrees"> 4°</span></p>
-          </div> 
-          </div>
-          `;
-  forecastHTML =
-    forecastHTML +
-    `<div class="days" id="forecast">
-            <div class="col" > 
-            Monday <br />  <img src="" alt="" id="icon"/>
-            <p>7° | <span class = "min-degrees"> 4°</span></p>
-          </div>
-         </div> `;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  forecast.forEach(function (forecastDay) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+      <div class="days" id="forecast">
+            ${forecastDay.dt} <br />  <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" id="icon"/>
+            <p>${forecastDay.temp.max} | <span class = "min-degrees"> ${forecastDay.temp.min}</span></p>
+          </div> `;
 
-  forecastHTML = forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+
+function getForecast(coordinates) {
+  let apiKey = "db5e301789f7ba7b4a0bc9f6bf6f135f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeather(response) {
@@ -98,6 +98,7 @@ function displayWeather(response) {
   document.querySelector("#maxtemp").innerHTML = Math.round(
     response.data.main.temp_max
   );
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -130,4 +131,3 @@ let currentLocation = document.querySelector("#currentLoc");
 currentLocation.addEventListener("click", showCurrentLocation);
 
 searchCity("Athens");
-displayForecast();
